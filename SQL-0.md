@@ -1,10 +1,5 @@
 # 其他 SQL 语句（未整理的）
 
-# 【反向like查询】
-```sql
-SELECT id,keywords FROM wx_keywords WHERE '百度一下'  LIKE CONCAT('%',keywords,'%');
-```
-
 # 【字段数据转移】
 ```sql
 update Devices as A left join Devices as B on A.ParentCode = B.Code set A.ParentID = B.ID;
