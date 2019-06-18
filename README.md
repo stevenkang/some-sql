@@ -1,6 +1,8 @@
 # some-sql
 一些工作过程中的 SQL
 
+ * [按照一定的条件给用户批量添加优惠券](SQL-1.md)
+
 # 【根据查询结果update】
 ```sql
 update A表 a INNER JOIN(select 字段1,字段2 from B表 b)t on t.字段2 = a.字段2 set a.字段3 = "XXX";
