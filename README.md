@@ -3,6 +3,7 @@
 
  * [按照一定的条件给用户批量添加优惠券](SQL-1.md)
  * [按天统计每天注册用户数](SQL-2.md)
+ * [多条件排序：从小到大排序，但 0 或者 NULL 排在最后](SQL-3.md)
 
 # 【根据查询结果update】
 ```sql
@@ -51,11 +52,6 @@ mysql>ALTER TABLE `table_name` ADD FULLTEXT ( `column`)
  
 5.添加多列索引
 mysql>ALTER TABLE `table_name` ADD INDEX index_name ( `column1`, `column2`, `column3` )
-```
-
-# 【从小到大排序，0在最后】
-```sql
-select * from test order by seq=0,seq;
 ```
 
 # 【MySQL计算时间差】
