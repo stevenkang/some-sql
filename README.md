@@ -5,6 +5,13 @@
  * [按天统计每天注册用户数](SQL-2.md)
  * [多条件排序：从小到大排序，但 0 或者 NULL 排在最后](SQL-3.md)
 
+# 用于实验的开放式数据库（目前仅开放查询权限）
+```
+host: cd.4kb.cn
+user: some_sql
+pass: 7FHzazTvjg5N
+```
+
 # 【根据查询结果update】
 ```sql
 update A表 a INNER JOIN(select 字段1,字段2 from B表 b)t on t.字段2 = a.字段2 set a.字段3 = "XXX";
